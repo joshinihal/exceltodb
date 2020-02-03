@@ -1,0 +1,23 @@
+<html>
+<div style="text-align: center;">
+DATA UPLOADED SUCCESSFULLY
+
+<table cellpadding='50' border="1" align="center">
+  <th>
+    Column 1
+  </th>
+  <th>
+    Column 2
+  </th>
+
+{% for item in val %}
+
+<tr>
+    <td>{{item[0]}}</td>
+    <td>{{item[1]}}</td>    
+</tr>
+{% endfor %}
+</table>
+
+</div>
+</html>

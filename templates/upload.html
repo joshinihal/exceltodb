@@ -1,0 +1,49 @@
+<html>
+  <style>
+  #uploadfile{
+  margin-top: 250px;
+  margin-left:350px;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+}
+  
+
+  .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+.text-center{
+  text-align: center;
+
+}
+.button {
+    position: absolute;
+    top: 50%;
+}
+  </style>
+</head>
+
+
+     
+<body>
+
+<div class="page-content" id= "uploadfile">
+<div class="input-group" >
+<div class="input-group-prepend">
+<form class ="md-form" enctype="multipart/form-data" action="/uploadsuccess" method="post" enctype="multipart/form-data">
+<input name="upload" id="fileSelect" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+<input type = "submit" value="Upload">
+</form>
+</div>
+</div>
+</div>
+<body>
+</html>
